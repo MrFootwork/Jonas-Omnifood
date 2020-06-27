@@ -135,7 +135,6 @@ h2:after {
     line-height   : 120%;
     vertical-align: middle;
     margin-top    : -5px;
-
 }
 
 /* --------------LINKS------------- */
@@ -388,4 +387,45 @@ header {
 .city-feature .icon-small,
 .city-feature p {
     display: inline-block;
+}
+
+/* ------------------------------------------------- */
+/* TESTIMONIALS */
+/* ------------------------------------------------- */
+
+.section-testimonials {
+    background-image     : linear-gradient(#000000cc, #000000cc), url(img/back-customers.jpg);
+    background-size      : cover;
+    color                : #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding    : 2%;
+    font-style : italic;
+    line-height: 125%;
+    position   : relative;
+}
+
+cite {
+    font-size : 90%;
+    margin-top: 25px;
+    display   : block;
+}
+
+blockquote:before {
+    display  : block;
+    content  : "\201C";
+    font-size: 550%;
+    position : absolute;
+    top      : 0px;
+    left     : -10px;
+
+}
+
+cite img {
+    height        : 45px;
+    border-radius : 50%;
+    margin-right  : 10px;
+    vertical-align: middle;
 }
