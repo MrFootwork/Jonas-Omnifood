@@ -124,14 +124,38 @@ h2:after {
 }
 
 .icon-small {
-    /* font-size    : 350%;
-    display      : block;
+    padding-right: 5px;
     color        : var(--color-primary);
-    margin-bottom: 10px;
-    transform    : translateX(80%); */
+    display      : inline-block;
+    width        : 40px;
+    text-align   : center;
+    font-size    : 350%;
+
+    /* Alignment secrets for text and icons */
+    line-height   : 120%;
+    vertical-align: middle;
+    margin-top    : -5px;
+
 }
 
+/* --------------LINKS------------- */
 
+.city-feature a:link,
+.city-feature a:visited {
+    color          : var(--color-primary);
+    text-decoration: none;
+    padding        : 1px;
+    border-bottom  : 1px solid var(--color-primary);
+    transition     : color 0.4s, border-bottom 0.4s;
+}
+
+.city-feature a:hover,
+.city-feature a:active {
+    color          : #000;
+    text-decoration: none;
+    padding        : 1px;
+    border-bottom  : 1px solid transparent;
+}
 
 /* --------------BUTTONS------------- */
 
@@ -342,4 +366,26 @@ header {
     height      : 50px;
     width       : auto;
     margin-right: 10px;
+}
+
+/* ------------------------------------------------- */
+/* CITIES */
+/* ------------------------------------------------- */
+
+.cities .box img {
+    width : 100%;
+    height: auto;
+}
+
+.cities .box h3 {
+    padding-top: 10px;
+}
+
+.city-feature {
+    padding-bottom: 5px;
+}
+
+.city-feature .icon-small,
+.city-feature p {
+    display: inline-block;
 }
