@@ -22,7 +22,18 @@ html {
     text-rendering  : optimizeLegibility;
 }
 
+.clearfix {
+    zoom: 1
+}
 
+.clearfix::after {
+    content   : '.';
+    clear     : both;
+    display   : block;
+    height    : 0;
+    visibility: hidden;
+
+}
 
 /* ------------------------------------------------- */
 /* REUSABLE ELEMENTS */
@@ -112,7 +123,39 @@ h2:after {
     transform    : translateX(80%);
 }
 
+.icon-small {
+    padding-right: 5px;
+    color        : var(--color-primary);
+    display      : inline-block;
+    width        : 40px;
+    text-align   : center;
+    font-size    : 350%;
 
+    /* Alignment secrets for text and icons */
+    line-height   : 120%;
+    vertical-align: middle;
+    margin-top    : -5px;
+
+}
+
+/* --------------LINKS------------- */
+
+.city-feature a:link,
+.city-feature a:visited {
+    color          : var(--color-primary);
+    text-decoration: none;
+    padding        : 1px;
+    border-bottom  : 1px solid var(--color-primary);
+    transition     : color 0.4s, border-bottom 0.4s;
+}
+
+.city-feature a:hover,
+.city-feature a:active {
+    color          : #000;
+    text-decoration: none;
+    padding        : 1px;
+    border-bottom  : 1px solid transparent;
+}
 
 /* --------------BUTTONS------------- */
 
@@ -267,4 +310,82 @@ header {
     opacity   : 1;
     transform : scale(1.03);
     transition: ease-in-out transform 0.2s, opacity 0.2s;
+}
+
+/* ------------------------------------------------- */
+/* HOW IT WORKS */
+/* ------------------------------------------------- */
+
+.section-steps {
+    background-color: rgb(238, 238, 238);
+}
+
+.steps-box {
+    margin-top: 30px;
+}
+
+.steps-box:first-child {
+    text-align   : right;
+    padding-right: 3%;
+    margin-top   : 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top  : 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+/* Circles with Numbers */
+.works-step div {
+    color        : var(--color-primary);
+    border       : 2px solid var(--color-primary);
+    display      : block;
+    border-radius: 50%;
+    height       : 55px;
+    width        : 55px;
+    text-align   : center;
+    padding      : 8px;
+    float        : left;
+    font-size    : 150%;
+    margin-right : 25px;
+}
+
+.btn-app img {
+    height      : 50px;
+    width       : auto;
+    margin-right: 10px;
+}
+
+/* ------------------------------------------------- */
+/* CITIES */
+/* ------------------------------------------------- */
+
+.cities .box img {
+    width : 100%;
+    height: auto;
+}
+
+.cities .box h3 {
+    padding-top: 10px;
+}
+
+.city-feature {
+    padding-bottom: 5px;
+}
+
+.city-feature .icon-small,
+.city-feature p {
+    display: inline-block;
 }
