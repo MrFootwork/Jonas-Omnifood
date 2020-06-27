@@ -22,7 +22,18 @@ html {
     text-rendering  : optimizeLegibility;
 }
 
+.clearfix {
+    zoom: 1
+}
 
+.clearfix::after {
+    content   : '.';
+    clear     : both;
+    display   : block;
+    height    : 0;
+    visibility: hidden;
+
+}
 
 /* ------------------------------------------------- */
 /* REUSABLE ELEMENTS */
@@ -110,6 +121,14 @@ h2:after {
     color        : var(--color-primary);
     margin-bottom: 10px;
     transform    : translateX(80%);
+}
+
+.icon-small {
+    /* font-size    : 350%;
+    display      : block;
+    color        : var(--color-primary);
+    margin-bottom: 10px;
+    transform    : translateX(80%); */
 }
 
 
@@ -267,4 +286,60 @@ header {
     opacity   : 1;
     transform : scale(1.03);
     transition: ease-in-out transform 0.2s, opacity 0.2s;
+}
+
+/* ------------------------------------------------- */
+/* HOW IT WORKS */
+/* ------------------------------------------------- */
+
+.section-steps {
+    background-color: rgb(238, 238, 238);
+}
+
+.steps-box {
+    margin-top: 30px;
+}
+
+.steps-box:first-child {
+    text-align   : right;
+    padding-right: 3%;
+    margin-top   : 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top  : 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+/* Circles with Numbers */
+.works-step div {
+    color        : var(--color-primary);
+    border       : 2px solid var(--color-primary);
+    display      : block;
+    border-radius: 50%;
+    height       : 55px;
+    width        : 55px;
+    text-align   : center;
+    padding      : 8px;
+    float        : left;
+    font-size    : 150%;
+    margin-right : 25px;
+}
+
+.btn-app img {
+    height      : 50px;
+    width       : auto;
+    margin-right: 10px;
 }
