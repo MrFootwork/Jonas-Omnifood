@@ -234,11 +234,11 @@ header {
 
 
 .logo {
-	height     : 150px;
+	height     : 100px;
 	width      : auto;
 	float      : left;
 	margin-top : 20px;
-	margin-left: 20%;
+	margin-left: 5%;
 }
 
 .main-nav {
@@ -437,6 +437,7 @@ cite img {
 	vertical-align: middle;
 }
 
+
 /* ------------------------------------------------- */
 /* SIGN UP */
 /* ------------------------------------------------- */
@@ -520,6 +521,11 @@ cite img {
 .plan-benefits li {
 	list-style : none;
 	line-height: 32px;
+}
+
+.line-through {
+	text-decoration: line-through;
+	color          : #ccc
 }
 
 /* -----------SIGN UP BUTTON------------ */
@@ -628,8 +634,23 @@ footer {
 	font-size: 180%;
 }
 
-.social-links li a .icon-small:hover {
-	color     : #ce3939;
+.social-links li a .facebook.icon-small:hover {
+	color     : #4267B2;
+	transition: ease-in-out color 0.2s;
+}
+
+.social-links li a .twitter.icon-small:hover {
+	color     : #1DA1F2;
+	transition: ease-in-out color 0.2s;
+}
+
+.social-links li a .linkedin.icon-small:hover {
+	color     : #0077b5;
+	transition: ease-in-out color 0.2s;
+}
+
+.social-links li a .instagram.icon-small:hover {
+	color     : #405DE6;
 	transition: ease-in-out color 0.2s;
 }
 
